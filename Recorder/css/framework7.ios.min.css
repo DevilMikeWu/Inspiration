@@ -16,25 +16,39 @@ body,html{position:relative;height:100%;width:100%;overflow-x:hidden}body{font-f
 /*
  Add by Mike. Date: 2016-01-16
 */
-i.icon.icon-tr-settings{
+i.icon.icon-recorder-settings{
 	width: 29px;
 	height: 29px;
-	background-image: url(../img/ios-tr-settings.png);
+	background-image: url(../img/myApp/icon-recorder-settings.png);
 	border-radius: 6px
 }
 
 
-i.icon.icon-tr-contact{
+i.icon.icon-recorder-account{
 	width: 29px;
 	height: 29px;
-	background-image: url(../img/ios-tr-contact.png);
+	background-image: url(../img/myApp/icon-recorder-account.png);
 	border-radius: 6px
 }
 
-i.icon.icon-tr-create{
+i.icon.icon-recorder-diary{
 	width: 29px;
 	height: 29px;
-	background-image: url(../img/ios-tr-create.png);
+	background-image: url(../img/myApp/icon-recorder-diary.png);
+	border-radius: 6px
+}
+
+i.icon.icon-recorder-todo{
+	width: 29px;
+	height: 29px;
+	background-image: url(../img/myApp/icon-recorder-todo.png);
+	border-radius: 6px
+}
+
+i.icon.icon-recorder-whatsnew{
+	width: 29px;
+	height: 29px;
+	background-image: url(../img/myApp/icon-recorder-whatsnew.png);
 	border-radius: 6px
 }
 
