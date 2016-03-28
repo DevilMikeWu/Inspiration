@@ -15,8 +15,5 @@ define(['myApp',"app/model/account","app/view/accountView"],function(myApp,Accou
         accountView.render(bindings);
     }
 
-
-
-
     return {init: init}
 });

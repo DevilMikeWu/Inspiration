@@ -7,11 +7,19 @@ define(function() {
     /**
      * Init router, that handle page events
      */
+
+    // 0 means filter , 1 means load
+    var pageFilter = {
+        index : 1,
+        accountType: 0
+    }
+
+
     function init() {
         $(document).on('pageBeforeInit', function (e) {
             var page = e.detail.page;
             console.log(page.name);
-            if(page.name != 'index'){
+            if(pageFilter[page.name] != 0){
                 load(page.name, page.query);
             }
         });
@@ -23,7 +31,7 @@ define(function() {
      * @param query
      */
     function load(controllerName, query) {
-        require(['controller/'+ controllerName + 'Controller'], function(controller) {
+        require(['app/controller/'+ controllerName + 'Controller'], function(controller) {
             controller.init(query);
         });
     }

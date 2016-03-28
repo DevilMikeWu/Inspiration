@@ -10,7 +10,8 @@ define(["myApp"],function(myApp){
         this.password = account['password'].trim() || '';
         this.description = account['description'].trim() || '';
         this.type = account['type'].trim() || '';
-        
+        this.create_time = account['create_time'] || '';
+        this.update_time = account['update_time'] || '';
     }
 
     Account.prototype.setValues = function(values){
@@ -46,8 +47,6 @@ define(["myApp"],function(myApp){
             myApp.f7.alert("Type can't be empty.");
             return false;
         }
-
-
     };
 
     return Account;
