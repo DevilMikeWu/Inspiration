@@ -11,7 +11,8 @@ define(function() {
     // 0 means filter , 1 means load
     var pageFilter = {
         index : 1,
-        accountType: 0
+        accountType: 0,
+        accountList: 0
     }
 
 

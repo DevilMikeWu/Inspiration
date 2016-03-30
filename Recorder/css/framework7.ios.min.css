@@ -53,57 +53,30 @@ i.icon.icon-recorder-whatsnew{
 }
 
 
-i.icon.icon-tr-list{
+i.icon.icon-recorder-work{
 	width: 29px;
 	height: 29px;
-	background-image: url(../img/ios-tr-list.png);
+	background-image: url(../img/myApp/icon-recorder-work.png);
 	border-radius: 6px
 }
 
-/*
-  Date: 2016-01-17
-*/
-i.icon.icon-tr-hws{
+i.icon.icon-recorder-others{
 	width: 29px;
 	height: 29px;
-	background-image: url(../img/iso-tr-hws.png);
+	background-image: url(../img/myApp/icon-recorder-others.png);
 	border-radius: 6px
 }
 
-
-i.icon.icon-tr-sws{
+i.icon.icon-recorder-private{
 	width: 29px;
 	height: 29px;
-	background-image: url(../img/ios-tr-sws.png);
+	background-image: url(../img/myApp/icon-recorder-private.png);
 	border-radius: 6px
 }
 
-i.icon.icon-tr-mvs{
+i.icon.icon-recorder-plus{
 	width: 29px;
 	height: 29px;
-	background-image: url(../img/ios-tr-mvs.png);
-	border-radius: 6px
-}
-
-
-i.icon.icon-tr-so{
-	width: 29px;
-	height: 29px;
-	background-image: url(../img/ios-tr-so.png);
-	border-radius: 6px
-}
-
-i.icon.icon-tr-myLeadsDraft{
-	width: 29px;
-	height: 29px;
-	background-image: url(../img/ios-tr-myLeadsDraft.png);
-	border-radius: 6px
-}
-
-
-i.icon.icon-tr-myLeadsSubmitted{
-	width: 29px;
-	height: 29px;
-	background-image: url(../img/ios-tr-myLeadsSubmitted.png);
+	background-image: url(../img/myApp/icon-recorder-plus.png);
 	border-radius: 6px
 }
