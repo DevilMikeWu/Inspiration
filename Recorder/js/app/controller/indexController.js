@@ -1,7 +1,7 @@
 /**
  * Created by MikeHero on 28/3/2016.
  */
-define(['myApp',"app/view/indexView"],function(myApp,indexView){
+define(['myApp',"app/view/indexView"],function(myApp,View){
 
     var bindings = [
         {
@@ -12,7 +12,7 @@ define(['myApp',"app/view/indexView"],function(myApp,indexView){
     ];
     function init(query){
         console.log(query);
-        indexView.render(bindings);
+        View.render(bindings);
     }
 
 

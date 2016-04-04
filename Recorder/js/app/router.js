@@ -12,15 +12,16 @@ define(function() {
     var pageFilter = {
         index : 1,
         accountType: 0,
-        accountList: 0
-    }
+        accountList: 1,
+        test: 0
+    };
 
 
     function init() {
         $(document).on('pageBeforeInit', function (e) {
             var page = e.detail.page;
             console.log(page.name);
-            if(pageFilter[page.name] != 0){
+            if(pageFilter[page.name] != 0 && pageFilter[page.name] != undefined){
                 load(page.name, page.query);
             }
         });

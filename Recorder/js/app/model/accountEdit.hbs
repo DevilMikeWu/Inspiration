@@ -1,0 +1,97 @@
+<div class="popup popup-account">
+    <div class="view view-popup navbar-fixed">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="left"><a href="#" class="link close-popup">Cancel</a></div>
+                <div class="center sliding">
+                    {{#if status.isNew}}
+                        New Account
+                    {{/if}}
+
+                </div>
+                <div class="right account-save-button"><a href="#" class="link">Save</a></div>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="page-content contact-edit-form">
+                <form id="account-form" class="list-block">
+                    <ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">Subject</div>
+                                    <div class="item-input">
+                                        <input type="text" name="subject" placeholder="Your subject" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">Account</div>
+                                    <div class="item-input">
+                                        <input type="text" name="account" placeholder="Your account" value="{{model.account}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">Password</div>
+                                    <div class="item-input">
+                                        <input type="password" name="password" placeholder="Your password" value="{{model.password}}" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">Description</div>
+                                    <div class="item-input">
+                                        <textarea name="description" placeholder="Your description" value="{{model.description}}"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">Type</div>
+                                    <div class="item-input">
+                                        <input type="text" name="type" value="private" value="{{model.type}}" disabled />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">Date</div>
+                                    <div class="item-input">
+                                        <input type="date" name="create_time" value="{{model.create_time}}" disabled />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+                {{#unless status.isNew}}
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <a href="#" class="item-link list-button account-delete-button">Delete Account</a>
+                        </li>
+                    </ul>
+                </div>
+                {{/unless}}
+            </div>
+        </div>
+    </div>
+</div>

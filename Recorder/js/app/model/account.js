@@ -1,16 +1,17 @@
 /**
  * Created by MikeWu on 3/27/2016.
  */
-define(["myApp"],function(myApp){
+define(["myApp","utils/utils"],function(myApp,utils){
 
     function Account(account){
         account = account || {};
-        this.subject = account['subject'].trim() || '';
-        this.account = account['account'].trim() || '';
-        this.password = account['password'].trim() || '';
-        this.description = account['description'].trim() || '';
-        this.type = account['type'].trim() || '';
-        this.create_time = account['create_time'] || '';
+        this.id = utils.generateGUID();
+        this.subject = account['subject'] || '';
+        this.account = account['account'] || '';
+        this.password = account['password'] || '';
+        this.description = account['description'] || '';
+        this.type = account['type'] || '';
+        this.create_time = utils.formatDate(new Date());
         this.update_time = account['update_time'] || '';
     }
 
@@ -27,26 +28,27 @@ define(["myApp"],function(myApp){
             password = this.password,
             description = this.description,
             type = this.type;
-        if(subject != ''){
+        if(subject == ''){
             myApp.f7.alert("Subject can't be empty.");
             return false;
         }
-        if(account != ''){
+        if(account == ''){
             myApp.f7.alert("Account can't be empty.");
             return false;
         }
-        if(password != ''){
+        if(password == ''){
             myApp.f7.alert("Password can't be empty.");
             return false;
         }
-        if(description != ''){
+        if(description == ''){
             myApp.f7.alert("Description can't be empty.");
             return false;
         }
-        if(type != ''){
+        if(type == ''){
             myApp.f7.alert("Type can't be empty.");
             return false;
         }
+        return true;
     };
 
     return Account;
