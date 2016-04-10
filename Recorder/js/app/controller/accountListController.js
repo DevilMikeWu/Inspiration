@@ -11,19 +11,20 @@ define(['myApp',"app/view/accountListView"],function(myApp,View){
         }
     ];
 
-    /*var params = {
-        status: "new"
-    };*/
+    var param = {
+        type: ""
+    };
 
     function openAddPopup(){
-        myApp.router.load("accountEdit",{});
+        myApp.router.load("accountEdit",param);
     }
 
     function init(query){
         console.log(query);
         var accounts = loadAccounts();
         console.log(accounts);
-
+        //initialize type value
+        param['type'] = query['type'];
         View.render({bindings: bindings,model:accounts});
     }
 

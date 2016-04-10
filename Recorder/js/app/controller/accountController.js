@@ -1,26 +1,26 @@
 /**
  * Created by MikeWu on 3/27/2016.
  */
-define(['myApp',"app/model/account","app/view/View"],function(myApp,Account,View){
+define(['myApp',"app/model/account","app/view/accountView"],function(myApp,Account,View){
 
     var bindings = [
         {
-            element: 'addAccount',
+            element: 'editAccount',
             event: 'click',
-            handler: 'openAddPopup'
+            handler: runEditMode
         }
     ];
 
 
 
-    function openAddPopup(){
+    function runEditMode(){
 
     }
 
 
     function init(query){
         console.log(query);
-        View.render(bindings);
+
     }
 
     return {init: init}
