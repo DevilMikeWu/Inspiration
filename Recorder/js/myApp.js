@@ -15,10 +15,11 @@ require.config({
 });
 
 
-define('myApp', ['app/router'], function(Router) {
+define('myApp', ['app/router','utils/utils'], function(Router,Utils) {
     Router.init();
     var f7 = new Framework7({
         modalTitle: 'Recorder',
+        swipePanel: 'left',
         animateNavBackIcon: true
     });
     var mainView = f7.addView('.view-main', {
@@ -27,6 +28,7 @@ define('myApp', ['app/router'], function(Router) {
     return {
         f7: f7,
         mainView: mainView,
-        router: Router
+        router: Router,
+        Utils: Utils
     };
 });

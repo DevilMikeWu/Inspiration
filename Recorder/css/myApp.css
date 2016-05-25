@@ -2,3 +2,77 @@
     /*text-align: left;*/
     color: red;
 }
+
+/*
+ Add by Mike. Date: 2016-01-16
+*/
+i.icon.icon-recorder-settings{
+    width: 29px;
+    height: 29px;
+    background-image: url(../img/myApp/icon-recorder-settings.png);
+    border-radius: 6px
+}
+
+
+i.icon.icon-recorder-account{
+    width: 29px;
+    height: 29px;
+    background-image: url(../img/myApp/icon-recorder-account.png);
+    border-radius: 6px
+}
+
+i.icon.icon-recorder-diary{
+    width: 29px;
+    height: 29px;
+    background-image: url(../img/myApp/icon-recorder-diary.png);
+    border-radius: 6px
+}
+
+i.icon.icon-recorder-todo{
+    width: 29px;
+    height: 29px;
+    background-image: url(../img/myApp/icon-recorder-todo.png);
+    border-radius: 6px
+}
+
+i.icon.icon-recorder-whatsnew{
+    width: 29px;
+    height: 29px;
+    background-image: url(../img/myApp/icon-recorder-whatsnew.png);
+    border-radius: 6px
+}
+
+
+i.icon.icon-recorder-work{
+    width: 29px;
+    height: 29px;
+    background-image: url(../img/myApp/icon-recorder-work.png);
+    border-radius: 6px
+}
+
+i.icon.icon-recorder-others{
+    width: 29px;
+    height: 29px;
+    background-image: url(../img/myApp/icon-recorder-others.png);
+    border-radius: 6px
+}
+
+i.icon.icon-recorder-private{
+    width: 29px;
+    height: 29px;
+    background-image: url(../img/myApp/icon-recorder-private.png);
+    border-radius: 6px
+}
+
+i.icon.icon-recorder-plus{
+    width: 29px;
+    height: 29px;
+    background-image: url(../img/myApp/icon-recorder-plus.png);
+    border-radius: 6px
+}
+
+i.icon.icon-recorder-edit{
+    width: 21px;
+    height: 29px;
+    background-image: url(../img/myApp/icon-recorder-edit.png);
+}

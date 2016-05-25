@@ -15,14 +15,15 @@
 
         <div class="page">
             <div class="page-content contact-edit-form">
-                <form id="account-form" class="list-block">
+                <form id="account-form" class="list-block accountForm">
                     <ul>
                         <li>
                             <div class="item-content">
                                 <div class="item-inner">
                                     <div class="item-title label">Subject</div>
                                     <div class="item-input">
-                                        <input type="text" name="subject" placeholder="Your subject" />
+                                        <input type="text" name="subject" placeholder="Your subject" value="{{model.subject}}" />
+                                        <input type="hidden" name="id" value="{{model.id}}" />
                                     </div>
                                 </div>
                             </div>
@@ -53,7 +54,7 @@
                                 <div class="item-inner">
                                     <div class="item-title label">Description</div>
                                     <div class="item-input">
-                                        <textarea name="description" placeholder="Your description" value="{{model.description}}"></textarea>
+                                        <textarea name="description" placeholder="Your description">{{model.description}}</textarea>
                                     </div>
                                 </div>
                             </div>

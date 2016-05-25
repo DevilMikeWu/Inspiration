@@ -3,7 +3,6 @@
  */
 
 define(function() {
-    var $ = Dom7;
 
     function generateGUID(){
         var d = new Date().getTime();
@@ -44,11 +43,39 @@ define(function() {
     function getObjectFromList(list,id){
          if(Array.isArray(list)){
              for( var i in list){
-                 if(d[i]['id'] == id){
-                     return d[i];
+                 if(list[i]['id'] == id){
+                     return list[i];
                  }
              }
          }
+        return false;
+    }
+
+    function removeObjectFromList(list,id){
+        var flag = false;
+        var newList = [];
+        if(Array.isArray(list)){
+            for (var i in list) {
+                if (list[i]['id'] !== id) {
+                    newList.push(list[i]);
+                } else {
+                    flag = true;
+                }
+            }
+            return newList;
+        }
+        return flag;
+    }
+
+    function updateObjectFromList(list,object){
+        if(Array.isArray(list)){
+            for( var i in list){
+                if(list[i]['id'] == object['id']){
+                    list[i] = object;
+                }
+            }
+            return list;
+        }
         return false;
     }
 
@@ -57,6 +84,8 @@ define(function() {
         generateGUID: generateGUID,
         getRandomInt: getRandomInt,
         getObjectFromList: getObjectFromList,
-        formatDate: formatDate
+        formatDate: formatDate,
+        removeObjectFromList: removeObjectFromList,
+        updateObjectFromList: updateObjectFromList
     };
 });

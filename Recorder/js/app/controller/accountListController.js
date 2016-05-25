@@ -46,5 +46,5 @@ define(['myApp',"app/view/accountListView"],function(myApp,View){
         return accounts;
     }
 
-    return {init: init}
+    return {init: init};
 });

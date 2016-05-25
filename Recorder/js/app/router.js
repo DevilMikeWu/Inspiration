@@ -13,6 +13,7 @@ define(function() {
         index : 1,
         accountType: 0,
         accountList: 1,
+        account: 1,
         test: 0
     };
 
@@ -33,6 +34,7 @@ define(function() {
      * @param query
      */
     function load(controllerName, query) {
+        console.log('app/controller/'+ controllerName + 'Controller');
         require(['app/controller/'+ controllerName + 'Controller'], function(controller) {
             controller.init(query);
         });

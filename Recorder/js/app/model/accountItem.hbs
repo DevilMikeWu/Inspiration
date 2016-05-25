@@ -1,0 +1,79 @@
+<div class="page-content">
+<div class="list-block">
+<ul>
+    {{#if model.subject}}
+        <li>
+            <div class="item-content">
+                <div class="item-inner">
+                    <div class="item-title label">Subject</div>
+                    <div class="item-input">
+                        <input type="text" name="subject"  value="{{model.subject}}" readonly/>
+                    </div>
+                </div>
+            </div>
+        </li>
+    {{/if}}
+
+    {{#if model.account}}
+        <li>
+            <div class="item-content">
+                <div class="item-inner">
+                    <div class="item-title label">Account</div>
+                    <div class="item-input">
+                        <input type="text" name="account"  value="{{model.account}}" readonly/>
+                    </div>
+                </div>
+            </div>
+        </li>
+    {{/if}}
+    {{#if model.password}}
+        <li>
+            <div class="item-content">
+                <div class="item-inner">
+                    <div class="item-title label">Password</div>
+                    <div class="item-input">
+                        <input type="text" name="password"  value="{{model.password}}" readonly/>
+                    </div>
+                </div>
+            </div>
+        </li>
+    {{/if}}
+    {{#if model.description}}
+        <li>
+            <div class="item-content">
+                <div class="item-inner">
+                    <div class="item-title label">Description</div>
+                    <div class="item-input">
+                        <textarea name="description" readonly>{{model.description}}</textarea>
+                    </div>
+                </div>
+            </div>
+        </li>
+    {{/if}}
+    {{#if model.type}}
+        <li>
+            <div class="item-content">
+                <div class="item-inner">
+                    <div class="item-title label">Type</div>
+                    <div class="item-input">
+                        <input type="text" name="type" value="{{model.type}}" readonly/>
+                    </div>
+                </div>
+            </div>
+        </li>
+    {{/if}}
+    {{#if model.create_time}}
+        <li>
+            <div class="item-content">
+                <div class="item-inner">
+                    <div class="item-title label">Date</div>
+                    <div class="item-input">
+                        <input type="date" name="create_time" value="{{model.create_time}}" readonly/>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    {{/if}}
+</div>
+</div>

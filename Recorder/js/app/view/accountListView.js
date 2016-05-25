@@ -7,6 +7,7 @@ define(['hbs!app/model/account-list-Item'], function(template) {
         var t = template(params.model);
         $('.accounts-list ul').html(t);
         //$('.searchbar-cancel').click();
+        unbindEvents(params.bindings);
         bindEvents(params.bindings);
     }
 
@@ -15,6 +16,12 @@ define(['hbs!app/model/account-list-Item'], function(template) {
     //    $('.contacts-list-header').text(params.header);
     //    $('.searchbar-cancel').click();
     //}
+
+    function unbindEvents(bindings){
+        for (var i in bindings) {
+            $(bindings[i].element).off(bindings[i].event);
+        }
+    }
 
     function bindEvents(bindings) {
         for (var i in bindings) {
